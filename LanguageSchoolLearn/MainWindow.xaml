@@ -1,0 +1,20 @@
+﻿<Window x:Class="LanguageSchoolLearn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LanguageSchoolLearn"
+        mc:Ignorable="d"
+        Title="Языковая школа Леарн" Height="145.979" Width="270.375"
+        ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="LoginBox" HorizontalAlignment="Left" Height="25" Margin="64,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="183" />
+        <PasswordBox x:Name="PasswodBox" HorizontalAlignment="Left" Height="25" Margin="64,44,0,0" VerticalAlignment="Top" Width="183" />
+        <Label Content="Логин:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top"/>
+        <Button Content="Ок" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="172,75,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" />
+
+
+    </Grid>
+</Window>

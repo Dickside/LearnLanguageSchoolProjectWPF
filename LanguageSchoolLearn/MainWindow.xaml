@@ -8,12 +8,16 @@
         Title="Языковая школа Леарн" Height="145.979" Width="270.375"
         ResizeMode="NoResize">
     <Grid>
-        <TextBox x:Name="LoginBox" HorizontalAlignment="Left" Height="25" Margin="64,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="183" />
-        <PasswordBox x:Name="PasswodBox" HorizontalAlignment="Left" Height="25" Margin="64,44,0,0" VerticalAlignment="Top" Width="183" />
-        <Label Content="Логин:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top"/>
-        <Button Content="Ок" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Button Content="Отмена" HorizontalAlignment="Left" Margin="172,75,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="LoginBox" HorizontalAlignment="Left" Height="25" Margin="53.729,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="183" Grid.Column="1" />
+        <PasswordBox x:Name="PasswodBox" HorizontalAlignment="Left" Height="25" Margin="53.729,44,0,0" VerticalAlignment="Top" Width="183" Grid.Column="1" />
+        <Label Content="Логин:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button Content="Ок" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Grid.ColumnSpan="2"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="161.729,75,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="1" />
 
 
     </Grid>

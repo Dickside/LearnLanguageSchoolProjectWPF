@@ -67,6 +67,9 @@
     <Compile Include="Views\AdminView.xaml.cs">
       <DependentUpon>AdminView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ClienListPage.xaml.cs">
+      <DependentUpon>ClienListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
     </Compile>
@@ -83,6 +86,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\AdminView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ClienListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -165,6 +172,18 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.Client.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.ClientService.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.DocumentByService.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.Entities.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.Gender.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.Manufacturer.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.Product.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.ProductPhoto.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.ProductSale.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.Service.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.ServicePhoto.datasource" />
+    <None Include="Properties\DataSources\LanguageSchoolLearn.Models.Tag.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

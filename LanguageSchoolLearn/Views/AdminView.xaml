@@ -4,9 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LanguageSchoolLearn.Views"
-        mc:Ignorable="d"
-        Title="Окно Администратора" Height="450" Width="800">
+        mc:Ignorable="d" 
+        Title="Окно Администратора" Height="468.097" Width="800.001">
     <Grid>
-        
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="75"/>
+        <Frame x:Name="AdminFrame" Content="" Margin="100,10,10,10" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

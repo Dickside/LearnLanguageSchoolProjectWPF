@@ -10,19 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace LanguageSchoolLearn.Views
 {
     /// <summary>
-    /// Логика взаимодействия для AdminView.xaml
+    /// Логика взаимодействия для ClienListPage.xaml
     /// </summary>
-    public partial class AdminView : Window
+    public partial class ClienListPage : Page
     {
-        public AdminView()
+        public ClienListPage()
         {
             InitializeComponent();
-            AdminFrame.Navigate(new ClienListPage());
+            clientDataGrid.DataContext = App.Entities.Client.ToList();
         }
     }
 }
